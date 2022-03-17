@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import house from '../images/house.jpg'
 
 export default class PropertyCard extends Component {
     render() {
         return (
 
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+            <Card style={{ width: '13rem'}}>
+                <Card.Img variant="top" src={house} />
                 <Card.Body>
                     <Card.Title>{this.props.obj.propertytitle}</Card.Title>
                     <Card.Text>

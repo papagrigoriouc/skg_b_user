@@ -3,17 +3,13 @@ import axios from 'axios';
 import PropertyCard from './PropertyCard';
 import  './PropertyList.css';
 
-
-
-
 export default class PropertyList extends Component {
 
     constructor(props){
         super(props)
         this.state = {
             properties:[]
-        }
-        
+        }        
     }
 
     componentDidMount(){
@@ -27,10 +23,8 @@ export default class PropertyList extends Component {
         })
         .catch((error)=>{
             console.log(error)
-        })
-        
-    }
-    
+        })        
+    }    
     DataTable(){
         return this.state.properties.map((res, i )=>{
             return <PropertyCard obj={res} key={i} />;
