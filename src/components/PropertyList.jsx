@@ -35,8 +35,8 @@ export default class PropertyList extends Component {
 
     render() {
         return (
-            <div>
-                <p>Property List Component</p>
+            <div className='body'>
+                
                 <div className='cards'>
                     {this.DataTable()}
                 </div>       
